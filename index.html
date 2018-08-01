@@ -1,21 +1,21 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html> 
 <head>
-<script>
-function add(){
-var a,b,c;
-a=Number(document.getElementById("first").value);
-b=Number(document.getElementById("second").value);
-c= a + b;
-document.getElementById("answer").value= c;
-}
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</script>
+<meta charset=utf-8 />
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
 </head>
 <body>
-<input id="first">
-<input id="second">
-<button onclick="add()">Add</button>
-<input id="answer">
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
 </body>
 </html>
